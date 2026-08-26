@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rashmi Kanaujiya | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-logo">Rashmi Kanaujiya</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="profile.jpeg" alt="Rashmi Kanaujiya" class="hero-img"/>
+    <h1>Rashmi Kanaujiya</h1>
+    <p class="tagline">Data Analyst &amp; AI/ML Engineer</p>
+    <p class="location">&#128205; Kanpur, Uttar Pradesh, India</p>
+    <div class="badge-row">
+      <span class="badge">Python</span>
+      <span class="badge">Machine Learning</span>
+      <span class="badge">Generative AI</span>
+      <span class="badge">Financial Analytics</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">FastAPI &amp; Docker</span>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:rashmi.kanaujiya1701@gmail.com" class="contact-link">&#9993; Email</a>
+      <a href="https://linkedin.com/in/rashmi-kanaujiya-1701" target="_blank" class="contact-link">&#128279; LinkedIn</a>
+      <a href="https://github.com/rashmikanaujiya1701" target="_blank" class="contact-link">&#128025; GitHub</a>
+      <a href="tel:+919044492707" class="contact-link">&#128222; +91 90444 92707</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="sec-title">&#128105;&#8205;&#128187; About Me</h2>
+    <div class="divider"></div>
+    <p class="about-text">
+     Rashmi Kanaujiya is a passionate developer with an interest in software development and modern technologies.
+She enjoys building practical, user-friendly applications and solving real-world problems through technology.
+She is continuously learning new tools and technologies to improve her development skills and create efficient,
+reliable solutions.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <h2 class="sec-title">&#128640; Projects</h2>
+    <div class="divider"></div>
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-num">Project 01</div>
+        <div class="proj-title">AI-Powered Invoice &amp; Receipt Extractor</div>
+        <p class="proj-desc">OCR pipeline that reads invoice/receipt images, extracts vendor, GSTIN, date, and tax fields using Tesseract + regex, and produces an audit-ready Excel report with a needs-review flag.</p>
+        <div class="tech-row">
+          <span class="tech-tag">Python</span><span class="tech-tag">Tesseract OCR</span><span class="tech-tag">Pandas</span><span class="tech-tag">OpenPyXL</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <a href="https://01-invoice-extractor-e4mwmf7hhgs4ivefahkcqu.streamlit.app/" target="_blank" class="proj-link">&#128640; Live Demo</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">Project 02</div>
+        <div class="proj-title">Financial Ratio &amp; Balance Sheet Analyzer</div>
+        <p class="proj-desc">Computes liquidity, solvency, and profitability ratios from multi-year balance sheet data, generates trend charts, and produces a traffic-light health-check Excel report.</p>
+        <div class="tech-row">
+          <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">OpenPyXL</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <a href="https://02-financial-ratio-analyzer-6macybikzd6fth34py2appp.streamlit.app/" target="_blank" class="proj-link">&#128640; Live Demo</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">Project 03</div>
+        <div class="proj-title">Retail Sales Demand Forecasting</div>
+        <p class="proj-desc">Forecasts 14-day unit demand per product category using lag-feature RandomForest regression (~10-13% MAPE), with confidence intervals and automatic restock alerts.</p>
+        <div class="tech-row">
+          <span class="tech-tag">Python</span><span class="tech-tag">scikit-learn</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <a href="https://03-demand-forecasting-kdbucvlkbsfeqdobdaw3r3.streamlit.app/" target="_blank" class="proj-link">&#128640; Live Demo</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">Project 04</div>
+        <div class="proj-title">Support Ticket Classifier + RAG Auto-Responder</div>
+        <p class="proj-desc">Classifies tickets by category &amp; urgency (TF-IDF + Logistic Regression), retrieves the closest FAQ via cosine similarity, and drafts a first-response reply automatically.</p>
+        <div class="tech-row">
+          <span class="tech-tag">Python</span><span class="tech-tag">scikit-learn</span><span class="tech-tag">TF-IDF</span><span class="tech-tag">RAG</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <a href="https://04-ticket-classifier-rag-jwvyogfvtjtmcd6cfvc35e.streamlit.app/" target="_blank" class="proj-link">&#128640; Live Demo</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">Project 05</div>
+        <div class="proj-title">Credit Risk / Loan Default Prediction</div>
+        <p class="proj-desc">Binary classification model (GradientBoosting, 0.73 ROC-AUC) predicting loan default probability with permutation-importance explainability and Low/Medium/High risk-tier segmentation.</p>
+        <div class="tech-row">
+          <span class="tech-tag">Python</span><span class="tech-tag">scikit-learn</span><span class="tech-tag">GradientBoosting</span><span class="tech-tag">OpenPyXL</span><span class="tech-tag">Streamlit</span>
+        </div>
+        <a href="https://05-credit-risk-model-akqwmsgsq5dgju4xbinmmu.streamlit.app/" target="_blank" class="proj-link">&#128640; Live Demo</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="sec-title">&#128736; Technical Skills</h2>
+    <div class="divider"></div>
+
+    <div class="skill-cat">Programming &amp; Data Analysis</div>
+    <div class="skill-grid">
+      <span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Data Cleaning</span><span class="skill-tag">Feature Engineering</span><span class="skill-tag">EDA</span><span class="skill-tag">Statistical Analysis</span>
+    </div>
+
+    <div class="skill-cat">ML &amp; Deep Learning</div>
+    <div class="skill-grid">
+      <span class="skill-tag">Linear/Logistic Regression</span><span class="skill-tag">Random Forest</span><span class="skill-tag">XGBoost</span><span class="skill-tag">KNN</span><span class="skill-tag">SVM</span><span class="skill-tag">Clustering</span><span class="skill-tag">ANN</span><span class="skill-tag">CNN</span><span class="skill-tag">LSTM</span><span class="skill-tag">Time-Series</span>
+    </div>
+
+    <div class="skill-cat">Generative &amp; Agentic AI</div>
+    <div class="skill-grid">
+      <span class="skill-tag">LLMs (GPT, Gemini, LLaMA)</span><span class="skill-tag">RAG</span><span class="skill-tag">LangChain</span><span class="skill-tag">LlamaIndex</span><span class="skill-tag">Prompt Engineering</span><span class="skill-tag">NLP</span><span class="skill-tag">Transformers</span>
+    </div>
+
+    <div class="skill-cat">Frameworks &amp; Libraries</div>
+    <div class="skill-grid">
+      <span class="skill-tag">scikit-learn</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">PyTorch</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Streamlit</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span><span class="skill-tag">Plotly</span>
+    </div>
+
+    <div class="skill-cat">Cloud &amp; MLOps</div>
+    <div class="skill-grid">
+      <span class="skill-tag">AWS SageMaker</span><span class="skill-tag">AWS Lambda</span><span class="skill-tag">AWS Bedrock</span><span class="skill-tag">Docker</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">CI/CD</span><span class="skill-tag">MLflow</span>
+    </div>
+
+    <div class="skill-cat">Databases</div>
+    <div class="skill-grid">
+      <span class="skill-tag">SQL</span><span class="skill-tag">NoSQL</span><span class="skill-tag">Pinecone</span><span class="skill-tag">FAISS</span><span class="skill-tag">ChromaDB</span>
+    </div>
+
+    <div class="skill-cat">Accounting &amp; Tools</div>
+    <div class="skill-grid">
+      <span class="skill-tag">Tally ERP 9</span><span class="skill-tag">Tally Prime</span><span class="skill-tag">MS Excel</span><span class="skill-tag">Git/GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-dark" id="experience">
+  <div class="container">
+    <h2 class="sec-title sec-title-dark">&#128188; Professional Experience</h2>
+    <div class="divider"></div>
+
+    <div class="exp-card">
+      <div class="exp-title">Customer Support Executive — MDA Software</div>
+      <div class="exp-meta">Mar 2023 – Present &nbsp;|&nbsp; Kanpur, India</div>
+      <ul class="exp-ul">
+        <li>Resolved 50+ inbound and outbound customer queries weekly on software products, maintaining high satisfaction through prompt, accurate issue resolution.</li>
+        <li>Generated invoices, POS entries, and supporting account documentation, ensuring accurate and audit-ready client records.</li>
+        <li>Coordinated with technical teams to escalate unresolved issues, reducing average resolution time through structured follow-up.</li>
+        <li>Prepared weekly and monthly customer support metric reports for management, supporting data-driven service improvements.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-title">D2C Customer Churn Prediction Service — Personal Project</div>
+      <div class="exp-meta">Python &nbsp;·&nbsp; scikit-learn &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; Docker</div>
+      <ul class="exp-ul">
+        <li>Framed customer churn as a binary classification problem; achieved ~0.86 ROC-AUC with sub-150ms inference per request.</li>
+        <li>Built and deployed a FastAPI scoring service delivering churn probability, risk category, and retention recommendations.</li>
+        <li>Implemented batch scoring for 10,000+ customers with Pydantic validation, automated API tests, and Docker deployment.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-dark" id="contact">
+  <div class="container" style="text-align:center;">
+    <h2 class="sec-title sec-title-dark">&#128222; Get In Touch</h2>
+    <div class="divider" style="margin:0 auto 30px;"></div>
+    <p style="color:#a0aec0;font-size:1rem;margin-bottom:30px;max-width:500px;margin-left:auto;margin-right:auto;">
+      Open to Data Analyst, AI/ML Support, and related roles. Feel free to reach out!
+    </p>
+    <div class="contact-row">
+      <a href="mailto:rashmi.kanaujiya1701@gmail.com" class="contact-link">&#9993; rashmi.kanaujiya1701@gmail.com</a>
+      <a href="https://linkedin.com/in/rashmi-kanaujiya-1701" target="_blank" class="contact-link">&#128279; LinkedIn</a>
+      <a href="https://github.com/rashmikanaujiya1701" target="_blank" class="contact-link">&#128025; GitHub</a>
+      <a href="tel:+919044492707" class="contact-link">&#128222; +91 90444 92707</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Built with &#10084;&#65039; by Rashmi Kanaujiya &nbsp;·&nbsp;
+    <a href="mailto:rashmi.kanaujiya1701@gmail.com">rashmi.kanaujiya1701@gmail.com</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
