@@ -15,6 +15,7 @@
     <span class="nav-logo">Rashmi Kanaujiya</span>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#major-projects">Major Projects</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -24,6 +25,7 @@
   </div>
   <ul class="mobile-menu" id="mobileMenu">
     <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#major-projects" onclick="toggleMenu()">Major Projects</a></li>
     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
     <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
@@ -66,6 +68,59 @@ She enjoys building practical, user-friendly applications and solving real-world
 She is continuously learning new tools and technologies to improve her development skills and create efficient,
 reliable solutions.
     </p>
+  </div>
+</section>
+
+<!-- MAJOR PROJECTS -->
+<section class="section section-dark" id="major-projects">
+  <div class="container">
+    <h2 class="sec-title sec-title-dark">&#11088; Major Projects</h2>
+    <div class="divider"></div>
+    <div class="major-grid">
+
+      <div class="major-card">
+        <div class="major-badge">Featured</div>
+        <div class="major-icon">&#128200;</div>
+        <div class="major-title">Enterprise CRM &amp; Lead Automation</div>
+        <p class="major-desc">
+          Comprehensive full-stack CRM platform built with React + TypeScript + Gemini AI. Features lead management with pipeline tracking (New → Contacted → Converted), automated follow-up scheduling, payment tracking with UPI/Bank/Cash support, inventory management with low-stock alerts, role-based access control (Admin / Sales Manager / Sales Rep / Finance), AI assistant for smart suggestions, and offline sync capability.
+        </p>
+        <div class="major-highlights">
+          <div class="highlight-item">&#128101; Role-Based Access Control</div>
+          <div class="highlight-item">&#129302; Gemini AI Assistant</div>
+          <div class="highlight-item">&#128179; Payment &amp; Invoice Tracking</div>
+          <div class="highlight-item">&#128260; Offline Sync</div>
+          <div class="highlight-item">&#128233; Automated Follow-ups</div>
+          <div class="highlight-item">&#128230; Inventory Management</div>
+        </div>
+        <div class="tech-row">
+          <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Gemini AI</span><span class="tech-tag">Vite</span><span class="tech-tag">Node.js</span>
+        </div>
+        <a href="https://enterprise-crm-lead-automation.ai.studio" target="_blank" class="proj-link major-link">&#128640; Live Demo</a>
+      </div>
+
+      <div class="major-card">
+        <div class="major-badge">Featured</div>
+        <div class="major-icon">&#128295;</div>
+        <div class="major-title">Worker Finder — On-Demand Service Marketplace</div>
+        <p class="major-desc">
+          On-demand local service marketplace connecting customers with verified tradespeople (Plumber, Electrician, Carpenter, AC Technician, etc.). Features AI-powered problem diagnosis via camera, live booking tracking with real-time status updates, instant in-app chat, emergency dispatch, worker verification badges, review system, and a full admin panel for managing workers, bookings, and complaints.
+        </p>
+        <div class="major-highlights">
+          <div class="highlight-item">&#129302; AI Problem Diagnosis</div>
+          <div class="highlight-item">&#128247; Camera Integration</div>
+          <div class="highlight-item">&#128205; Live Booking Tracking</div>
+          <div class="highlight-item">&#128172; Instant Chat</div>
+          <div class="highlight-item">&#128680; Emergency Dispatch</div>
+          <div class="highlight-item">&#9989; Worker Verification</div>
+        </div>
+        <div class="tech-row">
+          <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Gemini AI</span><span class="tech-tag">Vite</span><span class="tech-tag">Google Cloud Run</span>
+        </div>
+        <a href="https://worker-finder-482433861466.asia-southeast1.run.app" target="_blank" class="proj-link major-link">&#128640; Live Demo</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -216,6 +271,14 @@ reliable solutions.
       <a href="https://github.com/rashmikanaujiya1701" target="_blank" class="contact-link">&#128025; GitHub</a>
       <a href="tel:+919044492707" class="contact-link">&#128222; +91 90444 92707</a>
     </div>
+
+    <form class="contact-form" onsubmit="handleContact(event)">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message &#9993;</button>
+    </form>
+    <p id="form-msg" style="color:#68d391;margin-top:12px;display:none;">&#10003; Message sent successfully!</p>
   </div>
 </section>
 

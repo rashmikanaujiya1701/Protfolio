@@ -3,6 +3,15 @@ function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
+// Contact form handler
+function handleContact(e) {
+  e.preventDefault();
+  const msg = document.getElementById('form-msg');
+  msg.style.display = 'block';
+  e.target.reset();
+  setTimeout(() => msg.style.display = 'none', 4000);
+}
+
 // Navbar scroll shadow
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
